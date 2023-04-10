@@ -7,7 +7,7 @@ var longestCycle = function (edges) {
     this.NO_CYCLE_EXISTS = -1;
     const indegree = new Array(edges.length).fill(0);
     initializeIndegree(edges, indegree);
-    reduceIndegreeForEdgesNotPartOfCycle(edges, indegree);s
+    reduceIndegreeForEdgesNotPartOfCycle(edges, indegree);
     return findLongestCycle(edges, indegree);
 };
 
